@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OreMax Mining Company</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1579273163197-5e320a19e2ed?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-900 text-white shadow-lg">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <div class="text-2xl font-bold text-yellow-500">OreMax Mining</div>
+            <ul class="flex space-x-6">
+                <li><a href="#services" class="hover:text-yellow-500">Services</a></li>
+                <li><a href="#projects" class="hover:text-yellow-500">Projects</a></li>
+                <li><a href="#about" class="hover:text-yellow-500">About</a></li>
+                <li><a href="#contact" class="hover:text-yellow-500">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-screen flex flex-col justify-center items-center text-center text-white">
+        <h1 class="text-5xl md:text-6xl font-extrabold mb-6">Mining Excellence, Sustainable Future</h1>
+        <p class="text-xl md:text-2xl mb-8 max-w-2xl">OreMax Mining Company specializes in responsible mineral extraction, innovative solutions, and operational excellence across Africa.</p>
+        <a href="#contact" class="bg-yellow-500 text-gray-900 font-bold px-8 py-4 rounded-lg shadow-lg hover:bg-yellow-400 transition">Get in Touch</a>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12">Our Services</h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+                    <h3 class="text-2xl font-semibold mb-4">Exploration & Mining</h3>
+                    <p>Advanced geological surveying and environmentally responsible extraction processes.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+                    <h3 class="text-2xl font-semibold mb-4">Processing & Refining</h3>
+                    <p>State-of-the-art mineral processing facilities to ensure quality and efficiency.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+                    <h3 class="text-2xl font-semibold mb-4">Sustainability Solutions</h3>
+                    <p>Eco-friendly mining practices, community engagement, and environmental protection.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12">Recent Projects</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="relative group overflow-hidden rounded-xl shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1581091870625-3b0c2e5d1c41?auto=format&fit=crop&w=800&q=80" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity flex justify-center items-center">
+                        <p class="text-white text-lg font-semibold px-4 text-center">Copper Mining in Zambia</p>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-xl shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1601758123927-d39df99dc934?auto=format&fit=crop&w=800&q=80" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity flex justify-center items-center">
+                        <p class="text-white text-lg font-semibold px-4 text-center">Gold Refining Facility</p>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-xl shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1597879240227-052f5cfdd0f2?auto=format&fit=crop&w=800&q=80" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity flex justify-center items-center">
+                        <p class="text-white text-lg font-semibold px-4 text-center">Sustainable Mining Initiatives</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-100">
+        <div class="container mx-auto md:flex md:items-center md:gap-16">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <img src="https://images.unsplash.com/photo-1581091870625-3b0c2e5d1c41?auto=format&fit=crop&w=800&q=80" alt="Mining Team" class="rounded-xl shadow-lg">
+            </div>
+            <div class="md:w-1/2">
+                <h2 class="text-4xl font-bold mb-6">About OreMax</h2>
+                <p class="mb-4">With decades of experience in the mining industry, OreMax Mining Company delivers high-quality mineral extraction and processing while prioritizing environmental sustainability and community growth.</p>
+                <p>Our team of experts is committed to innovation, safety, and operational excellence. We believe in mining responsibly to create long-term value for our clients, employees, and communities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12">Contact Us</h2>
+            <form class="max-w-xl mx-auto bg-white p-10 rounded-xl shadow-lg">
+                <div class="mb-6 text-left">
+                    <label class="block mb-2 font-semibold" for="name">Name</label>
+                    <input class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" type="text" id="name" placeholder="Your Name">
+                </div>
+                <div class="mb-6 text-left">
+                    <label class="block mb-2 font-semibold" for="email">Email</label>
+                    <input class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" type="email" id="email" placeholder="Your Email">
+                </div>
+                <div class="mb-6 text-left">
+                    <label class="block mb-2 font-semibold" for="message">Message</label>
+                    <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" id="message" rows="5" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="bg-yellow-500 text-gray-900 font-bold px-8 py-3 rounded-lg hover:bg-yellow-400 transition">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6 mt-12">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 OreMax Mining Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

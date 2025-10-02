@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FinTech App - Manage Digital & Crypto Transactions">
+  <title>FinVault - Futuristic FinTech</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Diagonal sections */
+    .diagonal {
+      clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
+    }
+    .float-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .float-card:hover {
+      transform: translateY(-10px) rotate(-1deg);
+      box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body class="font-sans text-gray-100 bg-gray-900 overflow-x-hidden">
+
+  <!-- Header -->
+  <header class="fixed w-full z-20 bg-gray-900/80 backdrop-blur-md p-4 flex justify-between items-center">
+    <div class="flex items-center space-x-3">
+      <img src="assets/logo.png" alt="FinVault" class="h-10">
+      <span class="font-bold text-xl text-yellow-400">FinVault</span>
+    </div>
+    <nav class="hidden md:flex space-x-6 text-gray-200">
+      <a href="#features" class="hover:text-yellow-400">Features</a>
+      <a href="#about" class="hover:text-yellow-400">About</a>
+      <a href="#contact" class="hover:text-yellow-400">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative pt-32 pb-32 bg-gradient-to-br from-purple-900 to-indigo-900 diagonal flex items-center justify-center">
+    <div class="max-w-6xl mx-auto text-center relative z-10 px-4">
+      <h1 class="text-5xl font-extrabold mb-4">Digital & Crypto Finance Reimagined</h1>
+      <p class="text-gray-300 mb-6 max-w-2xl mx-auto">
+        FinVault is your all-in-one fintech platform, merging digital banking with cryptocurrency in a secure, futuristic interface.
+      </p>
+      <a href="#contact" class="px-8 py-3 bg-yellow-400 text-gray-900 rounded-lg font-bold hover:bg-yellow-500 transition">Get Started</a>
+    </div>
+    <img src="assets/dashboard.png" alt="App Dashboard" class="absolute right-10 top-20 w-96 opacity-80 rotate-6 hidden md:block">
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="relative py-32 bg-gray-800">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-12">
+      <div class="bg-gradient-to-tr from-indigo-600 to-purple-600 p-6 rounded-3xl float-card">
+        <img src="assets/crypto1.png" alt="Wallet" class="h-20 mx-auto mb-4">
+        <h3 class="text-xl font-bold mb-2 text-yellow-300">Crypto Wallet</h3>
+        <p class="text-gray-200">Securely manage your crypto assets and monitor portfolio growth with real-time updates.</p>
+      </div>
+      <div class="bg-gradient-to-tr from-purple-700 to-pink-600 p-6 rounded-3xl float-card">
+        <img src="assets/crypto2.png" alt="Payments" class="h-20 mx-auto mb-4">
+        <h3 class="text-xl font-bold mb-2 text-yellow-300">Digital Payments</h3>
+        <p class="text-gray-200">Send or receive digital currency instantly and track every transaction seamlessly.</p>
+      </div>
+      <div class="bg-gradient-to-tr from-pink-600 to-red-500 p-6 rounded-3xl float-card">
+        <img src="assets/dashboard.png" alt="Analytics" class="h-20 mx-auto mb-4">
+        <h3 class="text-xl font-bold mb-2 text-yellow-300">Analytics</h3>
+        <p class="text-gray-200">Gain actionable insights into your digital and crypto transactions with smart analytics.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="relative py-32 bg-gradient-to-br from-gray-900 to-gray-800 diagonal text-center px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl font-bold mb-6 text-yellow-400">About FinVault</h2>
+      <p class="text-gray-300 mb-4">
+        FinVault combines the flexibility of digital banking with the security of blockchain technology. We provide a unified platform for users to manage all digital and crypto assets effortlessly.
+      </p>
+      <p class="text-gray-300">
+        Whether you're sending money globally, investing in crypto, or monitoring your portfolio, FinVault makes finance futuristic, secure, and simple.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-32 bg-gray-900 text-center">
+    <h2 class="text-3xl font-bold mb-6 text-yellow-400">Contact Us</h2>
+    <p class="text-gray-300 mb-6">Start managing your digital & crypto transactions with FinVault today.</p>
+    <a href="mailto:info@finvault.com" class="px-8 py-3 bg-yellow-400 text-gray-900 rounded-lg font-bold hover:bg-yellow-500 transition">Get Started</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-400 text-center p-6">
+    © 2025 FinVault. All Rights Reserved.
+  </footer>
+
+</body>
+</html>

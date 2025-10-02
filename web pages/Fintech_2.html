@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive FinTech Landing Page">
+  <title>FinVault Interactive</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom, #0f172a, #1e293b);
+      overflow-x: hidden;
+    }
+    .coin {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      pointer-events: none;
+      animation: floatCoin linear infinite;
+    }
+    @keyframes floatCoin {
+      0% { transform: translateY(0) rotate(0deg); opacity:1;}
+      50% { transform: translateY(-200px) rotate(180deg); opacity:0.8;}
+      100% { transform: translateY(0) rotate(360deg); opacity:1;}
+    }
+    .counter {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body class="text-white">
+
+  <!-- Floating Coins -->
+  <div id="coins-container"></div>
+
+  <!-- Header -->
+  <header class="fixed w-full z-20 bg-gray-900/70 backdrop-blur-md p-4 flex justify-between items-center">
+    <div class="flex items-center space-x-3">
+      <img src="assets/logo.png" alt="FinVault" class="h-10">
+      <span class="font-bold text-xl text-yellow-400">FinVault</span>
+    </div>
+    <nav class="hidden md:flex space-x-6 text-gray-200">
+      <a href="#features" class="hover:text-yellow-400">Features</a>
+      <a href="#about" class="hover:text-yellow-400">About</a>
+      <a href="#contact" class="hover:text-yellow-400">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative pt-32 pb-32 flex flex-col items-center text-center px-4">
+    <h1 class="text-5xl md:text-6xl font-extrabold mb-4">Digital & Crypto Finance Reimagined</h1>
+    <p class="text-gray-300 mb-6 max-w-2xl">FinVault combines digital banking with cryptocurrency in one secure, futuristic platform.</p>
+    <a href="#contact" class="px-8 py-3 bg-yellow-400 text-gray-900 rounded-lg font-bold hover:bg-yellow-500 transition">Get Started</a>
+
+    <!-- Live Counters -->
+    <div class="mt-16 flex flex-col md:flex-row justify-center gap-12 text-center">
+      <div>
+        <div class="text-4xl counter" data-target="1250">0</div>
+        <p class="text-gray-300 mt-2">Users</p>
+      </div>
+      <div>
+        <div class="text-4xl counter" data-target="987000">0</div>
+        <p class="text-gray-300 mt-2">Transactions</p>
+      </div>
+      <div>
+        <div class="text-4xl counter" data-target="4500000">0</div>
+        <p class="text-gray-300 mt-2">Portfolio Value ($)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-32 px-4 max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
+    <div class="bg-gradient-to-tr from-indigo-600 to-purple-600 p-6 rounded-3xl hover:scale-105 transition transform shadow-lg text-center">
+      <img src="assets/crypto1.png" alt="Wallet" class="h-20 mx-auto mb-4">
+      <h3 class="text-xl font-bold mb-2 text-yellow-300">Crypto Wallet</h3>
+      <p class="text-gray-200">Securely manage your crypto assets and monitor portfolio growth in real-time.</p>
+    </div>
+    <div class="bg-gradient-to-tr from-purple-700 to-pink-600 p-6 rounded-3xl hover:scale-105 transition transform shadow-lg text-center">
+      <img src="assets/crypto2.png" alt="Payments" class="h-20 mx-auto mb-4">
+      <h3 class="text-xl font-bold mb-2 text-yellow-300">Digital Payments</h3>
+      <p class="text-gray-200">Send or receive digital currency instantly and track every transaction seamlessly.</p>
+    </div>
+    <div class="bg-gradient-to-tr from-pink-600 to-red-500 p-6 rounded-3xl hover:scale-105 transition transform shadow-lg text-center">
+      <img src="assets/dashboard.png" alt="Analytics" class="h-20 mx-auto mb-4">
+      <h3 class="text-xl font-bold mb-2 text-yellow-300">Analytics</h3>
+      <p class="text-gray-200">Gain insights into your digital and crypto transactions with smart analytics.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-32 px-4 text-center max-w-4xl mx-auto">
+    <h2 class="text-4xl font-bold mb-6 text-yellow-400">About FinVault</h2>
+    <p class="text-gray-300 mb-4">
+      FinVault merges digital banking and blockchain technology into a secure platform for everyone. Monitor, send, and receive digital assets effortlessly.
+    </p>
+    <p class="text-gray-300">
+      Track portfolio value, manage crypto assets, and enjoy a futuristic, intuitive financial interface.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-32 px-4 text-center bg-gray-800">
+    <h2 class="text-3xl font-bold mb-6 text-yellow-400">Contact Us</h2>
+    <p class="text-gray-300 mb-6">Start managing your digital & crypto transactions with FinVault today.</p>
+    <a href="mailto:info@finvault.com" class="px-8 py-3 bg-yellow-400 text-gray-900 rounded-lg font-bold hover:bg-yellow-500 transition">Get Started</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 text-center p-6">
+    © 2025 FinVault. All Rights Reserved.
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Floating coins
+    const coinsContainer = document.getElementById('coins-container');
+    for (let i = 0; i < 20; i++) {
+      const coin = document.createElement('img');
+      coin.src = 'assets/coin.png';
+      coin.className = 'coin';
+      coin.style.left = Math.random() * window.innerWidth + 'px';
+      coin.style.animationDuration = (5 + Math.random() * 5) + 's';
+      coinsContainer.appendChild(coin);
+    }
+
+    // Live Counters
+    const counters = document.querySelectorAll('.counter');
+    counters.forEach(counter => {
+      const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+        const increment = target / 200; // adjust speed
+        if (count < target) {
+          counter.innerText = Math.ceil(count + increment);
+          setTimeout(updateCount, 20);
+        } else {
+          counter.innerText = target.toLocaleString();
+        }
+      };
+      updateCount();
+    });
+  </script>
+
+</body>
+</html>

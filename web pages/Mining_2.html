@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mining Solutions - Mining Inventory Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-white p-6 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-gray-900">Mining Solutions</h1>
+            <nav>
+                <ul class="flex space-x-6 text-lg">
+                    <li><a href="#services" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Services</a></li>
+                    <li><a href="#case-studies" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Case Studies</a></li>
+                    <li><a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">About Us</a></li>
+                    <li><a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+
+        <section class="text-center py-20 bg-white rounded-lg shadow-xl mb-12">
+            <h2 class="text-5xl font-extrabold text-gray-900 mb-4">
+                Optimizing Mining Operations with Smart Inventory
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                Mining Solutions provides cutting-edge inventory management systems to reduce downtime, enhance supply chain visibility, and maximize profitability for the mining industry.
+            </p>
+            <a href="#contact " class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg">
+                Request a Demo
+            </a>
+        </section>
+
+        <section id="services" class="py-16">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg card">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Real-Time Inventory Tracking</h3>
+                    <p class="text-gray-600">
+                        Our system uses RFID and IoT sensors to provide real-time visibility into your inventory, ensuring you always know where your assets are.
+                    </p>
+              </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg card">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Predictive Demand Forecasting</h3>
+                 <p class="text-gray-600">
+                        Leverage machine learning to predict future inventory needs, minimizing stockouts and reducing unnecessary capital tied up in spare parts.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg card">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Automated Replenishment</h3>
+                    <p class="text-gray-600">
+                        Automate your reordering process with smart alerts and automated purchase orders, streamlining your supply chain and reducing administrative overhead.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-gray-300 my-16">
+
+        <section id="case-studies" class="py-16">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">Client Success Stories</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg card">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">Copper Creek Mines</h3>
+                    <p class="text-gray-500 mb-4">Challenge: Inefficient parts tracking led to frequent equipment downtime.</p>
+                    <p class="text-gray-700">
+                        **Solution:** Implemented our real-time tracking solution, which reduced maintenance downtime by **40%** and saved an estimated **$1.2 million** annually.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg card">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">Summit Gold Corp.</h3>
+                    <p class="text-gray-500 mb-4">Challenge: Overstocked inventory of spare parts and components.</p>
+                    <p class="text-gray-700">
+                        **Solution:** Our predictive forecasting tool optimized their stock levels, freeing up **25%** of their working capital and increasing operational efficiency.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-gray-300 my-16">
+
+        <section id="about" class="py-16 bg-blue-50 text-center rounded-xl">
+            <h2 class="text-4xl font-bold text-gray-900 mb-6">Who We Are</h2>
+            <p class="text-lg text-gray-700 max-w-4xl mx-auto">
+                Mining Solutions is a leader in mining technology, with a dedicated team of experts specializing in logistics, data science, and operational efficiency. We are committed to helping our clients navigate the complexities of modern mining with smart, data-driven solutions.
+            </p>
+        </section>
+
+        <hr class="border-gray-300 my-16">
+
+        <section id="contact" class="py-16 text-center">
+            <h2 class="text-4xl font-bold mb-6 text-gray-900">Get in Touch</h2>
+            <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+                Ready to optimize your mining inventory? Contact us today to learn more about how our solutions can transform your operations.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="mailto:info@minerva-solutions.com" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">Email Us</a>
+                <a href="tel:+15551234567" class="inline-block bg-gray-700 hover:bg-gray-800 text-white font-bold py-3 px-8 rounded-full transition duration-300">Call Us</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 p-6 text-center text-gray-400">
+        <p>&copy; 2025 Minerva Solutions. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

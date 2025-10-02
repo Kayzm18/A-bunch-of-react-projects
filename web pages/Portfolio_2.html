@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fun Interactive Portfolio" />
+  <title>Fun Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Floating Animation */
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+    .float {
+      animation: float 3s ease-in-out infinite;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-pink-200 via-purple-200 to-blue-200 font-sans text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white bg-opacity-70 backdrop-blur-md shadow-md fixed w-full z-10">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-extrabold text-pink-600">🎨 My Fun Portfolio</h1>
+      <nav class="space-x-6 hidden md:block">
+        <a href="#projects" class="hover:text-pink-500">Projects</a>
+        <a href="#experience" class="hover:text-pink-500">Experience</a>
+        <a href="#contact" class="hover:text-pink-500">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="min-h-screen flex flex-col items-center justify-center text-center px-4">
+    <img src="assets/avatar.png" alt="Avatar" class="w-40 h-40 rounded-full shadow-lg float mb-6">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-purple-700 mb-4">
+      Hey, I'm <span class="text-pink-600">[Your Name]</span> 👋
+    </h2>
+    <p class="text-lg max-w-xl mb-6">
+      I create fun, interactive, and user-friendly web experiences that bring ideas to life.
+    </p>
+    <button onclick="scrollToSection('projects')" 
+      class="px-8 py-3 bg-pink-500 text-white rounded-full shadow-lg hover:bg-pink-600 transition">
+      See My Work ↓
+    </button>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="max-w-6xl mx-auto py-16 px-4">
+    <h2 class="text-3xl font-extrabold text-center text-purple-700 mb-10">🌟 Projects</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transform transition">
+        <img src="assets/project1.jpg" alt="Project 1" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="font-bold text-xl mb-2 text-pink-600">Project One</h3>
+          <p class="text-gray-600 mb-4">An interactive quiz game with playful animations.</p>
+          <a href="#" class="text-pink-500 hover:underline">Play Now →</a>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transform transition">
+        <img src="assets/project2.jpg" alt="Project 2" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="font-bold text-xl mb-2 text-pink-600">Project Two</h3>
+          <p class="text-gray-600 mb-4">A colorful productivity app that makes work feel fun.</p>
+          <a href="#" class="text-pink-500 hover:underline">Check It Out →</a>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transform transition">
+        <img src="assets/project3.jpg" alt="Project 3" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="font-bold text-xl mb-2 text-pink-600">Project Three</h3>
+          <p class="text-gray-600 mb-4">A gamified habit tracker with badges and rewards.</p>
+          <a href="#" class="text-pink-500 hover:underline">Start Tracking →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="bg-white bg-opacity-80 py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-extrabold text-center text-purple-700 mb-10">💼 Experience</h2>
+      <div class="space-y-6">
+        <div class="bg-pink-100 p-6 rounded-lg shadow-md hover:scale-105 transition">
+          <h3 class="font-bold text-xl text-pink-700">Creative Developer - FunTech</h3>
+          <p class="text-gray-600">2023 - Present</p>
+          <p>Designed and developed interactive educational games for kids.</p>
+        </div>
+        <div class="bg-purple-100 p-6 rounded-lg shadow-md hover:scale-105 transition">
+          <h3 class="font-bold text-xl text-purple-700">UI/UX Designer - PlayWorks</h3>
+          <p class="text-gray-600">2021 - 2023</p>
+          <p>Created playful, engaging designs for mobile and web apps.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 px-4 text-center">
+    <h2 class="text-3xl font-extrabold text-purple-700 mb-4">📬 Let's Connect!</h2>
+    <p class="mb-6">Want to collaborate or just say hi? Drop me a message!</p>
+    <a href="mailto:you@example.com" 
+       class="px-6 py-3 bg-pink-500 text-white rounded-full shadow-lg hover:bg-pink-600 transition">
+      Say Hello 👋
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-purple-700 text-white text-center p-6">
+    © 2025 [Your Name] - Made with ❤️ and ☕
+  </footer>
+
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>

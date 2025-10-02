@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bettr Health - Mental Health NGO</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white p-6 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-800">Better Health</h1>
+            <nav>
+                <ul class="flex space-x-9 text-lg">
+                    <li><a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">About</a></li>
+                    <li><a href="#services" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Services</a></li>
+                    <li><a href="#advocacy" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Advocacy</a></li>
+                    <li><a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+
+        <section class="text-center py-20 bg-blue-50 rounded-lg shadow-inner mb-12">
+            <h2 class="text-5xl font-extrabold text-blue-900 mb-4 leading-tight">
+                Your Journey to Mental Wellness Starts Here
+            </h2>
+            <p class="text-xl text-gray-700 max-w-4xl mx-auto mb-8">
+                Open Minds is a non-profit organization dedicated to making mental healthcare accessible and breaking the stigma around mental illness. We connect you with professional therapists and champion mental health awareness.
+            </p>
+            <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg">
+                Find a Therapist Today
+            </a>
+        </section>
+
+        <section id="about" class="py-16">
+            <h2 class="text-4xl font-bold text-center mb-12 text-blue-800">About Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="text-gray-700 space-y-4">
+                    <p class="text-lg leading-relaxed">
+                        At Open Minds, we believe that everyone deserves support. Our mission is to create a community where mental health is a priority, and seeking help is seen as a sign of strength, not weakness.
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        Founded by a group of passionate mental health advocates and professionals, we work tirelessly to provide a safe, confidential, and judgment-free platform for those in need.
+                    </p>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/600x400" alt="Group of people talking in a support group" class="rounded-xl shadow-lg">
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-gray-300 my-16">
+
+        <section id="services" class="py-16">
+            <h2 class="text-4xl font-bold text-center mb-12 text-blue-800">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg card">
+                    <div class="text-orange-500 text-5xl mb-4 text-center">🧠</div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2 text-center">Therapist Matching</h3>
+                    <p class="text-gray-600 text-center">
+                        We use a personalized approach to connect you with licensed therapists who fit your specific needs, preferences, and schedule.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg card">
+                    <div class="text-orange-500 text-5xl mb-4 text-center">🤝</div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2 text-center">Support Groups</h3>
+                    <p class="text-gray-600 text-center">
+                        Join our facilitated virtual and in-person support groups to connect with others who are facing similar challenges in a supportive environment.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg card">
+                    <div class="text-orange-500 text-5xl mb-4 text-center">💡</div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2 text-center">Educational Resources</h3>
+                    <p class="text-gray-600 text-center">
+                        Access our library of articles, webinars, and workshops on a wide range of mental health topics to help you on your wellness journey.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-gray-300 my-16">
+
+        <section id="advocacy" class="py-16 bg-blue-50 rounded-xl">
+            <h2 class="text-4xl font-bold text-center mb-12 text-blue-800">Our Advocacy</h2>
+            <div class="text-gray-700 text-center max-w-4xl mx-auto space-y-6">
+                <p class="text-lg">
+                    We're committed to changing the conversation around mental health. Our campaigns and partnerships focus on:
+                </p>
+                <ul class="flex flex-wrap justify-center space-x-6 text-lg font-medium text-orange-600">
+                    <li class="p-2 bg-white rounded-full shadow-md m-2">Reducing Stigma</li>
+                    <li class="p-2 bg-white rounded-full shadow-md m-2">Promoting Open Dialogue</li>
+                    <li class="p-2 bg-white rounded-full shadow-md m-2">Championing Accessible Care</li>
+                </ul>
+                <p class="text-lg">
+                    Through public campaigns and corporate partnerships, we aim to make mental health support a standard part of corporate and community life.
+                </p>
+            </div>
+        </section>
+
+        <hr class="border-gray-300 my-16">
+
+        <section id="contact" class="py-16 text-center">
+            <h2 class="text-4xl font-bold mb-6 text-blue-800">Take the First Step</h2>
+            <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+                Whether you're looking for professional support or want to join our cause, we're here for you. Reach out today.
+            </p>
+            <div class="flex justify-between space-x-6">
+                <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">
+                         Find a Therapist
+                </a>
+                <a href="mailto:info@openminds.org" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full transition duration-300">
+                    Contact Us
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 p-6 text-center text-gray-400">
+        <p>&copy; 2025 Open Minds. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

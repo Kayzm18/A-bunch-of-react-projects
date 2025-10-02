@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Professional Portfolio showcasing projects and work experience" />
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold text-gray-900">My Portfolio</h1>
+      <nav class="space-x-6 hidden md:block">
+        <a href="#projects" class="hover:text-blue-500">Projects</a>
+        <a href="#experience" class="hover:text-blue-500">Experience</a>
+        <a href="#contact" class="hover:text-blue-500">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-50 py-16">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center px-4">
+      <img src="assets/profile.jpg" alt="Profile Picture" class="w-40 h-40 rounded-full shadow-lg mb-6 md:mb-0 md:mr-8">
+      <div>
+        <h2 class="text-3xl font-bold mb-2">Hi, I'm [Your Name]</h2>
+        <p class="text-lg text-gray-600">
+          A passionate developer focused on creating impactful web applications and digital experiences.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="max-w-6xl mx-auto py-16 px-4">
+    <h2 class="text-3xl font-bold text-center mb-10">Projects</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Project Card -->
+      <div class="bg-white shadow-md rounded-lg overflow-hidden">
+        <img src="assets/project1.jpg" alt="Project 1" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="font-bold text-xl mb-2">Project One</h3>
+          <p class="text-gray-600 mb-4">A web app that helps users manage tasks efficiently with a clean UI.</p>
+          <a href="#" class="text-blue-500 hover:underline">View Project →</a>
+        </div>
+      </div>
+      <!-- Project Card -->
+      <div class="bg-white shadow-md rounded-lg overflow-hidden">
+        <img src="assets/project2.jpg" alt="Project 2" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="font-bold text-xl mb-2">Project Two</h3>
+          <p class="text-gray-600 mb-4">A responsive portfolio website designed to showcase personal work.</p>
+          <a href="#" class="text-blue-500 hover:underline">View Project →</a>
+        </div>
+      </div>
+      <!-- Project Card -->
+      <div class="bg-white shadow-md rounded-lg overflow-hidden">
+        <img src="assets/project3.jpg" alt="Project 3" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="font-bold text-xl mb-2">Project Three</h3>
+          <p class="text-gray-600 mb-4">A real-time chat application with secure authentication.</p>
+          <a href="#" class="text-blue-500 hover:underline">View Project →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="bg-gray-100 py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-10">Work Experience</h2>
+      <div class="space-y-6">
+        <!-- Experience Item -->
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <h3 class="font-bold text-xl mb-1">Frontend Developer - ABC Corp</h3>
+          <p class="text-gray-500 mb-2">Jan 2023 - Present</p>
+          <p class="text-gray-600">Developed and maintained company websites, improved load speeds by 40%, and implemented modern UI design patterns.</p>
+        </div>
+        <!-- Experience Item -->
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <h3 class="font-bold text-xl mb-1">Web Developer Intern - XYZ Ltd</h3>
+          <p class="text-gray-500 mb-2">Jun 2022 - Dec 2022</p>
+          <p class="text-gray-600">Built responsive landing pages, collaborated with design teams, and optimized SEO for better visibility.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 px-4 bg-blue-600 text-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Let's Work Together</h2>
+      <p class="mb-6">I'm open to freelance projects, collaborations, and full-time opportunities.</p>
+      <a href="mailto:your.email@example.com" 
+         class="px-6 py-3 bg-white text-blue-600 rounded-lg hover:bg-gray-200">
+        Email Me
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 text-center p-6">
+    © 2025 [Your Name]. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
