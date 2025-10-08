@@ -1,6 +1,16 @@
-const dashboard = () => {
+import {Header} from "../../../components";
+
+const Dashboard = () => {
+    const user ={ name: 'Kawana'}
     return (
-        <div>Dashboard page1</div>
+        <main className="dashboard wrapper">
+            <Header 
+               title={`Welcome ${user?.name ?? 'Guest'}`}
+               description="Track pupolar destinations in real time"
+            />
+
+            Dashboard contents
+        </main>
     )
 }
-export default dashboard
+export default Dashboard

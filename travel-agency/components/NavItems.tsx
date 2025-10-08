@@ -4,7 +4,7 @@ import {cn} from "../lib/utils";
 
 const NavItems = ({handleClick} : { handleClick?: () => void}) => {
     const user = {
-        name: 'Adrian',
+        name: 'Kawana',
         email: 'contact@example.com',
         imageUrl: 'assets/images/david.webp'
     }
