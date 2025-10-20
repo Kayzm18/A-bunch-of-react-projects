@@ -22,8 +22,8 @@ const TripCard = ({id, name, location, imageUrls, tags, price}:
             </figure>
            </article>
 
-           <div className="mt-5 pl-[18px pr-3.5 pb-5">
-
+           <div className="mt-5 pl-[18px] pr-3.5 pb-5">
+                <ChipListComponent ></ChipListComponent>
            </div>
         </Link>
     )
