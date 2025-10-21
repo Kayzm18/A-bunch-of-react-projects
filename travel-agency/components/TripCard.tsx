@@ -1,4 +1,7 @@
+
 import { Link, useLocation } from "react-router"
+import { ChipListComponent, ChipsDirective, ChipDirective } from "@syncfusion/ej2-react-buttons"; // ✅ Assuming Syncfusion is used
+import { getFirstWord} from "../lib/utils"
 
 const TripCard = ({id, name, location, imageUrls, tags, price}:
     TripCardProps
@@ -23,7 +26,15 @@ const TripCard = ({id, name, location, imageUrls, tags, price}:
            </article>
 
            <div className="mt-5 pl-[18px] pr-3.5 pb-5">
-                <ChipListComponent ></ChipListComponent>
+                <ChipListComponent id="travel-chip">
+                    <ChipsDirective
+                        {tags.map((tag, index ) =>(
+                            <ChipDirective 
+                            key={index}
+                            text={getFirstWord(tag)}
+                            />
+                        ))}
+                </ChipListComponent>
            </div>
         </Link>
     )
