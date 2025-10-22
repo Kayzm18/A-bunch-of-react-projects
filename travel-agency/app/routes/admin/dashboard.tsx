@@ -1,4 +1,4 @@
-import {Header, StatsCard, TripCard} from "../../../components";
+import {Header, StatsCard, TripCard} from "../../../components/Index";
 import { dashboardStats, user, allTrips } from "~/constants";
 
 
@@ -14,7 +14,7 @@ const Dashboard = () => {
             />
 
             <section className="fle flex-col gap-6">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-3 gap-6 w-full">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
                     <StatsCard
                        headerTitle="Total Users"
                        total={totalUsers}
