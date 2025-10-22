@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router"
 import { ChipListComponent, ChipsDirective, ChipDirective } from "@syncfusion/ej2-react-buttons"; // ✅ Assuming Syncfusion is used
 import { getFirstWord} from "../lib/utils"
 
-const TripCard = ({id, name, location, imageUrls, tags, price}:
+const TripCard = ({id, name, location, imageUrl, tags, price}:
     TripCardProps
 ) =>{
 
@@ -12,7 +12,7 @@ const TripCard = ({id, name, location, imageUrls, tags, price}:
         <Link to={path.pathname === '/' || path.pathname.startsWith('/travel')
             ? `/travel/${id}` : `/trips/${id}`}
         className="trip-card">
-           <img src={imageUrls} alt={name} />
+           <img src={imageUrl} alt={name} />
 
            <article>
             <h2>{name}</h2>
@@ -27,15 +27,18 @@ const TripCard = ({id, name, location, imageUrls, tags, price}:
 
            <div className="mt-5 pl-[18px] pr-3.5 pb-5">
                 <ChipListComponent id="travel-chip">
-                    <ChipsDirective
+                    <ChipsDirective>
                         {tags.map((tag, index ) =>(
                             <ChipDirective 
                             key={index}
                             text={getFirstWord(tag)}
                             />
                         ))}
+                        </ChipsDirective>
                 </ChipListComponent>
            </div>
+
+           <article className="tripCard-pill">{price}</article>
         </Link>
     )
 }
